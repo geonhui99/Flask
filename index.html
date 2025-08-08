@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>먹고 싶은 거 리스트</title>
+</head>
+<body>
+    <h1>먹고 싶은 거 List</h1>
+    <ul>
+        {% for food in foods %}
+            <li>{{ food.name }} ({{ food.type }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
